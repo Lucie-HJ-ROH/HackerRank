@@ -17,7 +17,6 @@ public class JavaStringTokens {
                 sb.append(split[i] + "\n");
             }
         }
-
         System.out.println(cnt + "\n" + sb);
         scan.close();
     }
