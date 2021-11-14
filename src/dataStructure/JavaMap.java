@@ -20,8 +20,9 @@ public class JavaMap {
             String s=in.nextLine();
             if(hashMap.containsKey(s)){
                 System.out.println(s + "=" + hashMap.get(s));
-            }else
+            }else {
                 System.out.println("Not found");
+            }
         }
     }
 
