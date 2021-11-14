@@ -10,12 +10,8 @@ public class Java1DArray_Part2 {
     }
 
     public static boolean isSolve(int leap, int i, int[] game, int n){
-        if(i<0 || game[i]==1){
-            return false;
-        }
-        if(i==n-1 || i+leap >=n){
-            return true;
-        }
+        if(i<0 || game[i]==1){            return false;        }
+        if(i==n-1 || i+leap >=n){            return true;        }
         game[i] = 1;
         return isSolve(leap, i-1, game, n)||isSolve(leap, i+1, game, n)||isSolve(leap, i+leap, game, n);
     }
